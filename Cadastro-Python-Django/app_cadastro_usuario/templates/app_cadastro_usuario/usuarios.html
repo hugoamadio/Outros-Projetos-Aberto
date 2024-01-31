@@ -1,0 +1,26 @@
+<div class="container">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>CPF</th>
+            <th>Endereço</th>
+            <th>CEP</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+        </tr>
+        {% for usuario in usuarios %}
+        <tr>
+            <td>{{ usuario.id_usuario }}</td>
+            <td>{{ usuario.nome }}</td>
+            <td>{{ usuario.email }}</td>
+            <td>{{ usuario.cpf }}</td>
+            <td>{{ usuario.endereco }}</td>
+            <td>{{ usuario.cep }}</td>
+            <td>{{ usuario.cidade }}</td>
+            <td>{{ usuario.estado }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
